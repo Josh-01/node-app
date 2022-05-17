@@ -6,8 +6,6 @@ on:
   workflow_dispatch:
 # jobs:
 #    build:
-#      env:
-#        REPO_PUSH_TOKEN : ${{ secrets.ACTIONS_TOKEN }}
 #      runs-on: ubuntu-latest
 #      steps:
 #      - uses: actions/checkout@v3
@@ -33,6 +31,8 @@ on:
 #    trigger_e2e_tests:
 #      needs: deploy-staging
 #      runs-on: ubuntu-latest
+#      env:
+#       REPO_PUSH_TOKEN : ${{ secrets.ACTIONS_TOKEN }}
 #      steps:
 #        # TODO: Replace the remote origin url with the account or organization where you are forking the repository to.
 #        # TODO: REPO_PUSH_TOKEN is a PAT token that should be created with the repo scope and stored as a repo secret
